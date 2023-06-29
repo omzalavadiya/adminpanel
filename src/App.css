@@ -1,38 +1,188 @@
-.App {
-  text-align: center;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li
+{
+    list-style: none;
 }
+.container
+{
+    max-width: 1417px;
+    margin: auto;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header
+{
+    background: linear-gradient(#0f2710,#424320,#642c53);
 }
-
-.App-link {
-  color: #61dafb;
+p
+{
+    margin: 0;
+    padding: 0;
 }
+.logo
+{
+    width:100px;
+    height:100px;
+    object-fit: cover;
+}
+.logo img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.blog-img
+{
+    width:100%;
+    height:300px;
+    object-fit: cover;
+}
+.blog-img img
+{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 0px 10px 10px 10px;
+}
+.main_menu li
+{
+    padding: 20px 10px;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    overflow-x: hidden;
+}
+.main_menu li a
+{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    font-weight:500;
+    position: relative;
+    background-color:black;
+    padding: 5px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+.blog-body
+{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px 0 10px 10px;
+}
+.blog-title
+{
+    background: linear-gradient(#0f0c29,#302b63,#24243e);
+    color: white;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+.blog-title::after
+{
+    content: '';
+    position: absolute;
+    width:0%;
+    height:3px;
+    background-color:#0f2710;
+    bottom:0%;
+    left: 0%;
+    transition:0.3s;
+}
+.blog-title:hover::after
+{
+    width: 100%;
+}
+.blog-description
+{
+    /* background: linear-gradient(#ad5389,#3c1053); */
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.blog-des
+{
+    max-height:100px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp:6;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+.read-button
+{
+    padding:5px 30px;
+    /* margin:5% 65%; */
+    border-radius: 10px;
+    background-color:#0f2710;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.read-button a
+{
+    color: white;
+}
+.like-button
+{
+    border: none;
+    background-color:rgb(169, 87, 87);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size:24px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+
+}
+.like-button i 
+{
+    color: white;
+}
+.single-title
+{
+    border-radius: 10px 10px 0 0;
+    background-color: #0f0c29;
+    color: white;
+}
+.single-des
+{
+    border-radius:0 0 10px 10px ;
+    background-color: #203A43;
+    color:white;
+    text-align: justify;
+
+}
+table
+{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    
+   
+}
+td
+{
+    padding: 10px;
+    /* color: white; */
+}
+input[type="submit"]{
+    background-color: #0f2710;
+    position: relative;
+    border-radius: 10px;
+    color: white;
+}
+td input[type="submit"] i {
+    margin-left: 20px;
+    position: absolute;
+}
+.ant-card .ant-card-body
+{
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+
+}
+.span{
+text-align: center;
 }
